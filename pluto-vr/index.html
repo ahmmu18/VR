@@ -18,9 +18,11 @@
 
         <a-entity camera="active: true" look-controls wasd-controls position="0 1.8 0"></a-entity>
 
-        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 90000; easing: linear">
-            <a-sky src="#space"></a-sky>
-        </a-entity>
+        <!-- <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 90000; easing: linear">
+            
+        </a-entity> -->
+        
+        <a-sky src="#space" animation="property: rotation; to: 0 360 0; loop: true; dur: 90000; easing: linear"></a-sky>
 
         <!-- <a-entity id="opacity" position="0 1 -1"
             animation="property: components.text.material.uniforms.opacity.value; to: 0; dir: alternate; loop: true"
