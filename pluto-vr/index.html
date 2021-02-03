@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 </head>
 
 <body>
@@ -17,11 +17,9 @@
             <a-asset-item id="pluto" src="./img/pluto/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-entity id="rig" movement-controls="fly: true; speed: 0.3">
-            <a-entity camera position="0 1.6 0" look-controls></a-entity>
+        <a-entity movement-controls>
+            <a-entity camera="active: true" look-controls position="0 1.8 0"></a-entity>
         </a-entity>
-
-        <a-entity camera="active: true" look-controls wasd-controls position="0 1.8 0"></a-entity>
 
         <!-- <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 90000; easing: linear">
             
