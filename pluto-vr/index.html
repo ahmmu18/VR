@@ -16,8 +16,10 @@
             <a-asset-item id="pluto" src="./img/pluto/scene.gltf"></a-asset-item>
         </a-assets>
 
+        <a-entity camera="active: true" look-controls wasd-controls position="0 1.8 0"></a-entity>
+
         <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 90000; easing: linear">
-            <a-sky src="#space" scale="0.2 0.2 0.2"></a-sky>
+            <a-sky src="#space"></a-sky>
         </a-entity>
 
         <!-- <a-entity id="opacity" position="0 1 -1"
@@ -25,12 +27,11 @@
             text="font: exo2bold; color: white; align: center; value: PLUTO; width: 3">
         </a-entity> -->
 
-        <a-entity camera="active: true" look-controls wasd-controls position="0 1.8 0">
-            <a-entity id="opacity" position="0 0.3 -1"
+        <a-entity id="opacity" position="0 2 -1"
                 text="font: exo2bold; color: white; align: center; value: PLUTO; width: 5">
             </a-entity>
 
-            <a-entity id="opacity" position="0 0.1 -1"
+            <a-entity id="opacity" position="0 1.8 -1"
                 text="font: exo2bold; color: #aaa; align: center; value: A STORY OF DWARF PLANET; width: 1.5">
             </a-entity>
 
@@ -39,12 +40,10 @@
             <a-entity gltf-model="#pluto"></a-entity>
         </a-entity> -->
 
-            <a-entity rotation="0 0 0" scale="1 1 1" position="0 0.5 -2.5"
+            <a-entity rotation="0 0 0" scale="1 1 1" position="0 2 -2.5"
                 animation="property: rotation; to: 360 360 0; loop: true; dur: 100000; easing: linear">
                 <a-entity gltf-model="#pluto"></a-entity>
             </a-entity>
-
-        </a-entity>
     </a-scene>
 </body>
 
